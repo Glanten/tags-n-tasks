@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="Content-Type-Style" content="text/css" />
+    <meta name="Content-Type-Script" content="text/javascript" />
+    <title>
+        TAGS & TASKS
+    </title>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="Author" content="Rook Glanten" />
+    <link rel="start" href="/" title="TAGS and TASKS" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='icons/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='icons/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='icons/favicons/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', filename='icons/favicons//site.webmanifest') }}" />
+    {% block head_block %}{% endblock %}
+</head>
+
+<body>
+
+    <header>
+        <!-- header content goes here -->
+    </header>
+
+    <main>
+        {% block body_block %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- footer content goes here -->
+    </footer>
+</body>
+
+</html>
