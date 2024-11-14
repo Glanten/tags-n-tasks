@@ -1,3 +1,31 @@
 html {
   color-scheme: light dark;
 }
+
+.index_container {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 20% 80%;
+  gap: 10px;
+}
+
+.index_header,
+.index_footer {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.collection_column {
+  align-content: center;
+  text-align: center;
+}
+
+.card_collection {
+  padding: 10px;
+}
+
+.index_main {
+  align-content: center;
+  text-align: center;
+}
